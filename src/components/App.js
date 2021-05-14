@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getProduct } from '../redux/actions/productActions';
-// import axios from 'axios';
+import InfoBox from './infoBox/InfoBox';
 
 const App = () => {
   const dispatch = useDispatch();
@@ -11,16 +11,17 @@ const App = () => {
     dispatch(getProduct());
   }, [dispatch]);
 
-  // const getData = async () => {
-  //   const { data } = await axios.get("https://fe-assignment.vaimo.net/");
-  //   console.log(data.product);
-  // };
-  // getData();
-
   return (
-    <div>
-      App
-    </div>
+    <>
+      {loading 
+        ? <h2>Loading...</h2>
+        : error
+          ? <h2>{error}</h2>
+          : <div className="main-container">
+              <InfoBox />
+            </div>
+      }
+    </>
   );
 };
 

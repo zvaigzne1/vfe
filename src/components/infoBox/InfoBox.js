@@ -1,10 +1,11 @@
+import OptionList from "./OptionList"
 
 
 const InfoBox = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <OptionList />
+    </>
   );
 };
 
