@@ -1,0 +1,98 @@
+@import '../Base.scss';
+// Colors used from Base.scss
+// $color-gray-light: #999999;
+// $color-gray-dark: #333333;
+
+.qty-rocker {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  color: $color-gray-dark;
+
+  .grayed-out {
+    opacity: .4;
+    cursor: default;
+  }
+
+  &__minus-box,
+  &__plus-box {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #E6E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__minus-box {
+    border-radius: 2px 0 0 2px;
+  }
+
+  &__img-minus {
+    width: 14px;
+    height: 2px;
+    display: inline-block;
+  }
+
+  &__input-box {
+    box-shadow: inset 0 1px 0 0 #E6E7EB, inset 0 -1px 0 0 #E6E7EB;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: none;
+
+    @media only screen and (min-width: 1264px) {
+      width: 80px;
+    }
+
+    input { 
+      font-family: Roboto;
+      font-size: 14px;
+      line-height: 16px;
+      width: 40px;
+      text-align: center;
+      outline: none;
+      border: none;
+
+      @media only screen and (min-width: 1264px) {
+        width: 80px;
+      }
+    }
+
+    #light-placeholder {
+      &::placeholder {
+        color: $color-gray-light;
+      } 
+    }
+
+    #dark-placeholder {
+      &::placeholder {
+        color: $color-gray-dark;
+      } 
+    }
+
+    // Code for removing input arrows
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+    // for removing input arrows on Mozzilla
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+  }
+
+  &__plus-box {
+    border-radius: 0 2px 2px 0;
+  }
+
+  &__img-plus {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+  }
+}
