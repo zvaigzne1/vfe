@@ -1,15 +1,18 @@
-import { useState } from 'react';
+import { useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, subtractFromCart, removeFromCart } from '../../redux/actions/cartActions';
 import './QtyRocker.scss';
 
 const QtyRocker = ({ item }) => {
-  let [qty, setQty] = useState(item.qty);
+  const inputField = useRef();
   const dispatch = useDispatch();
   const cartItems = useSelector(state => state.cart.cartItems);
   const incrementStep = 1;
   const maxValue = 10;
-  const minValue = 0;   
+  const minValue = 0;
+
+  const itemFromCart = cartItems.find((x) => (x.id === item.id));
+  itemFromCart ? item.qty = itemFromCart.qty : item.qty=0;
 
   const addToCartHandler = (item) => {
     const val = Number(item.qty);
@@ -19,43 +22,38 @@ const QtyRocker = ({ item }) => {
       if (existItem) {
         item.qty = val + incrementStep;
         dispatch(addToCart(item));
-        setQty(item.qty);
+        inputField.current.value = item.qty;
       } else {
         item.qty = incrementStep;
         dispatch(addToCart(item));
-        setQty(item.qty);
+        inputField.current.value = item.qty;
       }
     }
   };
 
   const subtractFromCartHandler = (item) => {
     if (item.qty - incrementStep >= minValue) {
-        item.qty = item.qty - incrementStep;
-        dispatch(subtractFromCart(item));
-        setQty(item.qty);
+      item.qty = item.qty - incrementStep;
+      dispatch(subtractFromCart(item));
+      inputField.current.value = item.qty;
     }
-
     if (item.qty === 0) {
-      dispatch(removeFromCart(item.id));
-      setQty(item.qty);
+      dispatch(removeFromCart(item.id));      
     }
   };
 
-  const onInputChangeHandler = (e) => {
-    const value = Number(e.target.value);
+  const onBlurHandler = (e) => {
+    const value = Number(e.target.value)
+
     if (value > minValue && value <= maxValue) {
-      setQty(value);
-      item.qty = value;
+      item.qty=value;
       dispatch(addToCart(item));
     } else if (value === 0) {
-      setQty(0);
       dispatch(removeFromCart(item.id));
-    } else if (value < minValue || value > maxValue) {
-      setQty(item.qty);
+    } else {
+      inputField.current.value = item.qty;
     }
-  } 
-
-
+  }
 
   return (
     <section className="qty-rocker">
@@ -68,13 +66,13 @@ const QtyRocker = ({ item }) => {
       <div className="qty-rocker__input-box">
      
         <input
+          ref={inputField}
           className={item.qty === 0 ? "grayed-out" : ""}
           type="number"
-          value={qty}
-          onChange={(e) => onInputChangeHandler(e)}
+          placeholder={item.qty}
+          onBlur={(e) => onBlurHandler(e)}
           >
         </input>
-
       </div>
 
       <div 
