@@ -1,0 +1,21 @@
+@import '../Base.scss';
+
+.badge-list {
+  display: flex;
+  margin-bottom: 8px;
+
+  & > * {
+    color: $color-primary;
+    background-color: $color-primary-light;
+
+    &:first-child {
+      color: $color-white;
+      background-image: linear-gradient(270deg, #F5515F 0%, #FF7527 100%);
+      border-radius: 2px 0 0 2px;
+    }
+    
+    &:last-child {
+      border-radius: 0 2px 2px 0;
+    }
+  }
+}

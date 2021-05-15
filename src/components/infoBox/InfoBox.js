@@ -1,3 +1,4 @@
+import BadgeList from './BadgeList';
 import './InfoBox.scss';
 import OptionList from "./OptionList"
 
@@ -7,8 +8,11 @@ const InfoBox = () => {
     <>
       <section className="info-box">
         <div className="info-box__container">
+          <div className="badges">
+            <BadgeList />          
+          </div>
 
-          <OptionList />
+          {/* <OptionList /> */}
 
         </div>      
       </section>

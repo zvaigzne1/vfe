@@ -1,0 +1,12 @@
+.badge {
+  padding: 2px 8px;
+  display: flex;
+  align-items: center;
+
+  &__img {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+  }
+}
