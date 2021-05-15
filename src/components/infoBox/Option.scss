@@ -1,0 +1,28 @@
+@import '../Base.scss';
+
+.option {
+  display: flex;
+
+  & * {
+    font-size: 14px;
+  }
+
+  &__label {
+    flex: 0 0 148px;
+    padding: 12px 0;
+
+    // @media only screen and (min-width: px) {
+    //   flex: 0 0 174px;
+    // }
+  }
+
+  &__price {
+    flex: 0 0 56px;
+    margin-right: 12px;
+    padding: 12px 0;
+
+    // @media only screen and (min-width: px) {
+    //   margin-right: 24px;
+    // }
+  }
+}

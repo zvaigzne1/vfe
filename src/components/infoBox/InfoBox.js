@@ -1,10 +1,17 @@
+import './InfoBox.scss';
 import OptionList from "./OptionList"
 
 
 const InfoBox = () => {
   return (
     <>
-      <OptionList />
+      <section className="info-box">
+        <div className="info-box__container">
+
+          <OptionList />
+
+        </div>      
+      </section>
     </>
   );
 };

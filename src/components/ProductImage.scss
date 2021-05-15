@@ -1,0 +1,12 @@
+.product-image {
+
+  margin: 0 0 12px 0;
+  display: flex;
+  justify-content: center;
+
+  &__img {
+    width: 360px;
+    height: 360px;
+    display: block;
+  }
+}

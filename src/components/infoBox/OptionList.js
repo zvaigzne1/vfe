@@ -1,3 +1,4 @@
+import './OptionList.scss';
 import { useSelector } from 'react-redux';
 import Option from './Option';
 

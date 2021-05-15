@@ -2,6 +2,7 @@
 // Colors used from Base.scss
 // $color-gray-light: #999999;
 // $color-gray-dark: #333333;
+// $color-white: #FFFFFF; 
 
 .qty-rocker {
   display: flex;
@@ -16,6 +17,7 @@
 
   &__minus-box,
   &__plus-box {
+    background-color: $color-white;
     width: 40px;
     height: 40px;
     border: 1px solid #E6E7EB;
@@ -52,6 +54,7 @@
       font-size: 14px;
       line-height: 16px;
       width: 40px;
+      color: $color-gray-dark;
       text-align: center;
       outline: none;
       border: none;

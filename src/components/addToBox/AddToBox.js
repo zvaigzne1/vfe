@@ -1,10 +1,10 @@
-
+import './AddToBox.scss';
 
 const AddToBox = () => {
   return (
-    <div>
+    <section className="add-to-box">
       
-    </div>
+    </section>
   );
 };
 

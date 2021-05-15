@@ -1,3 +1,4 @@
+import './Option.scss';
 import QtyRocker from './QtyRocker';
 
 const Option = ({ item }) => {

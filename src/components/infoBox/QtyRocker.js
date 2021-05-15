@@ -14,6 +14,8 @@ const QtyRocker = ({ item }) => {
   const itemFromCart = cartItems.find((x) => (x.id === item.id));
   itemFromCart ? item.qty = itemFromCart.qty : item.qty=0;
 
+  const btnDissabled = item.qty > 0 ? false : true;
+
   const addToCartHandler = (item) => {
     const val = Number(item.qty);
 
@@ -57,11 +59,12 @@ const QtyRocker = ({ item }) => {
 
   return (
     <section className="qty-rocker">
-      <div 
+      <button 
+        disabled={btnDissabled}
         onClick={() => {subtractFromCartHandler(item)}}
         className={`qty-rocker__minus-box ${item.qty === 0 ? "grayed-out" : ""}`}>
         <img className="qty-rocker__img-minus" src="img/icons8-minus.png" alt="minus button" />        
-      </div>
+      </button>
      
       <div className="qty-rocker__input-box">
      
@@ -75,12 +78,12 @@ const QtyRocker = ({ item }) => {
         </input>
       </div>
 
-      <div 
+      <button 
         onClick={() => {addToCartHandler(item)}}
         className={`qty-rocker__plus-box ${item.qty >= maxValue ? "grayed-out" : ""}`}
         >
         <img className="qty-rocker__img-plus" src="img/icons8-plus_math.png" alt="plus button"/>
-      </div>
+      </button>
     </section>
   );
 };
