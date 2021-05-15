@@ -1,0 +1,32 @@
+@import '../Base.scss';
+
+.ratings-box {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+
+  & > * {
+    cursor: pointer;
+  }
+
+  &__img {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+  }
+
+  &__ratings-score {
+    color: $color-primary;
+    margin-right: 4px;
+  }
+
+  &__reviews-count {
+    color: $color-gray-light;
+    margin-right: 24px;
+  }
+
+  &__buyers-count {
+    color: $color-gray-dark;
+  }
+}

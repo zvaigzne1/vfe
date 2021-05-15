@@ -1,0 +1,30 @@
+@import '../Base.scss';
+
+.countdown-box {
+  width: 328px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+
+  & > * {
+    font-size: 14px;
+  }
+
+  &__discount-amount {
+    flex: 0 0 59px;
+    color: $color-primary;
+  }
+
+  &__discount-text {
+    flex: 0 0 104px;
+    color: $color-gray-light;
+    margin-right: 24px;
+  }
+
+  &__img {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 12px;
+  }
+}

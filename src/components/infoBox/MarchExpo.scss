@@ -1,0 +1,44 @@
+@import '../Base.scss';
+
+.march-expo {
+  height: 40px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  background-color: $color-primary-light;
+  cursor: pointer;
+
+  &__logo {
+    width: 76px;
+    height: 40px;
+    display: inline-block;
+  }
+
+  &__free-shipping {
+    color: $color-primary;
+    margin: 0 45px 0 24px;
+    font-size: 14px;
+
+    // @media only screen and (min-width: 0px) {
+    //   margin: 0 24px;
+    // }
+  }
+
+  &__on-time {
+    display: none;
+
+    // @media only screen and (min-width: 0px) {
+    //   display: inline-block;
+    //   margin-right: 25px;
+    //   color: $color-primary;
+    //   font-size: 14px;
+    // }
+  }
+
+  &__forward {
+    width: 8px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 16px;
+  }
+}

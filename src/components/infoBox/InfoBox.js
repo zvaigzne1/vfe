@@ -1,6 +1,13 @@
-import BadgeList from './BadgeList';
 import './InfoBox.scss';
+import BadgeList from './BadgeList';
+import Title from './Title';
 import OptionList from "./OptionList"
+import RatingsBox from './RatingsBox';
+import PriceBox from './PriceBox';
+import CountdownBox from './CountdownBox';
+import TradeAssurance from './TradeAssurance';
+import Payments from './Payments';
+import Links from './Links';
 
 
 const InfoBox = () => {
@@ -8,11 +15,15 @@ const InfoBox = () => {
     <>
       <section className="info-box">
         <div className="info-box__container">
-          <div className="badges">
-            <BadgeList />          
-          </div>
-
-          {/* <OptionList /> */}
+            <BadgeList />
+            <Title />
+            <RatingsBox />
+            <PriceBox />
+            <CountdownBox />
+            <OptionList />
+            <TradeAssurance />
+            <Payments />
+            <Links />
 
         </div>      
       </section>

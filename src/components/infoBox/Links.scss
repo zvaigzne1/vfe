@@ -1,0 +1,15 @@
+@import '../Base.scss';
+
+.links {
+  display: flex;
+
+  & > * {
+    color: $color-gray-light;
+    text-decoration: none;
+    font-weight: 400;
+  }
+
+  &__logistics {
+    margin-right: 24px;
+  }
+}

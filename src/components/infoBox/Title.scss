@@ -1,0 +1,32 @@
+@import '../Base.scss';
+
+.title {
+  height: 72px;
+  position: relative;
+  margin-bottom: 12px;
+
+  &__h1 {
+    color: $color-gray-dark;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  &__hot-sale-products {
+    width: 111px;
+    height: 20px;
+    background-color: #EDF0F3;
+    border-radius: 2px;
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__p {
+    color: $color-gray-light;
+  }
+}

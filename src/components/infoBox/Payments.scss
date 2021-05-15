@@ -1,0 +1,32 @@
+@import '../Base.scss';
+
+.payments {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+
+  &__p {
+    color: $color-gray-light;
+  }
+
+  img {
+    display: inline-block;
+  }
+
+  &__visa {
+    width: 17px;
+    height: 12px;
+    margin-right: 4px;
+  }
+
+  &__mastercard {
+    width: 17px;
+    height: 12px;
+    margin-right: 4px;
+  }
+
+  &__apple {
+    width: 28px;
+    height: 12px;
+  }
+}
