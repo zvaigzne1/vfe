@@ -12,8 +12,15 @@ const reducer = combineReducers({
 
 const middleware = [thunk];
 
+const INITIAL_STATE = {
+  cart : {
+    cartItems: []
+  }
+};
+
 const store = createStore(
-  reducer, 
+  reducer,
+  INITIAL_STATE,
   composeWithDevTools(applyMiddleware(...middleware))
 );
 

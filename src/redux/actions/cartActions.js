@@ -1,6 +1,6 @@
 import * as actionTypes from '../constants/cartConstants';
 
-export const addToCart = (item) => (dispatch) => {
+export const addToCart = (item) => (dispatch, getState) => {
   dispatch({
     type: actionTypes.ADD_TO_CART,
     payload: {
@@ -11,9 +11,10 @@ export const addToCart = (item) => (dispatch) => {
       symbol: item.symbol
     }
   })
+  localStorage.setItem('cart', JSON.stringify(getState().cart.cartItems));
 };
 
-export const subtractFromCart = (item) => (dispatch) => {
+export const subtractFromCart = (item) => (dispatch, getState) => {
   dispatch({
     type: actionTypes.SUBTRACT_FROM_CART,
     payload: {
@@ -24,11 +25,13 @@ export const subtractFromCart = (item) => (dispatch) => {
       symbol: item.symbol
     }
   })
+  localStorage.setItem('cart', JSON.stringify(getState().cart.cartItems));
 };
 
-export const removeFromCart = (id) => (dispatch) => {
+export const removeFromCart = (id) => (dispatch, getState) => {
   dispatch({
     type: actionTypes.REMOVE_FROM_CART,
     payload: id
   })
+  localStorage.setItem('cart', JSON.stringify(getState().cart.cartItems));
 };

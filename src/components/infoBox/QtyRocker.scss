@@ -61,18 +61,6 @@
       }
     }
 
-    #light-placeholder {
-      &::placeholder {
-        color: $color-gray-light;
-      } 
-    }
-
-    #dark-placeholder {
-      &::placeholder {
-        color: $color-gray-dark;
-      } 
-    }
-
     // Code for removing input arrows
     input::-webkit-outer-spin-button,
     input::-webkit-inner-spin-button {
