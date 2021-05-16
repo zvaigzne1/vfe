@@ -1,0 +1,9 @@
+{
+  "short_name": "Janis Zvaigze VFE Test",
+  "name": "Janis Zvaigze VFE Test",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

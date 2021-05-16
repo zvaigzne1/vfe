@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux';
 
 const ProductImage = () => {
   const product = useSelector(state => state.getProduct.product);
-  console.log(product)
   return (
     <>
       {

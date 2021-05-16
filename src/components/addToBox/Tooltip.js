@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import './Tooltip.scss';
 
-{/* Example
+/* Example
 <Tooltip position="top" content="lorem ipsum">
 <button>Hover me</button>
 </Tooltip>
-*/}
+*/
 
 // Content
 const TooltipContent = ({ tooltipClass, content, position, tooltipPosition, duration }) => {
