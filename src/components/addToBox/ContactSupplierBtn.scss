@@ -1,0 +1,42 @@
+@import '../Base.scss';
+
+.contact-supplier-btn {
+
+  color: $color-primary;
+  border: 1px solid $color-primary;
+  width: 284px;
+  height: 40px;
+  border-radius: 20px;
+  outline: none;
+
+  // @media only screen and (min-width: 0px) {
+  //   width: 258px;
+  // }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    width: 154px;
+    margin: 10px 83px 10px 47px;
+    
+    // @media only screen and (min-width: 690px) {
+    //   margin: 10px 68px 10px 36px;
+    // }
+  }
+
+  &__img {
+    flex: 0 0 14px;
+    height: 12px;
+    display: inline-block;
+    margin-right: 12px;
+  }
+
+  &__p {
+    flex: 0 0 128px;
+    color: $color-primary;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+}

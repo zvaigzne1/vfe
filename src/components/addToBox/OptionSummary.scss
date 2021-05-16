@@ -1,0 +1,37 @@
+@import '../Base.scss';
+
+.option-summary {
+  width: 336px;
+  height: min-content;
+  padding: 0 26px 24px 26px;
+  display: flex;
+  flex-direction: column;
+
+  // @media only screen and (min-width: 0px) {
+  //   width: 306px;
+  //   padding: 0 24px 24px 24px;
+  // }
+
+  & > * {
+    color: $color-gray-light;
+    font-size: 14px;
+  }
+
+  &__title {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  &__count {
+    align-self: flex-end;
+  }
+
+  &__sub-total {
+    align-self: flex-end;
+  }
+
+  &__span {
+    color: $color-gray-dark;
+    font-weight: 700;
+  }
+}

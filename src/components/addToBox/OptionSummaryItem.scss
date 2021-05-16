@@ -1,0 +1,28 @@
+@import '../Base.scss';
+
+.option-summary-item {
+
+  color: $color-gray-light;
+  font-size: 14px;
+
+
+  &__box {
+    padding-bottom: 12px;
+  }
+
+  &__label {
+    font-weight: 700;
+  }
+
+  &__text {
+
+  }
+
+  &__qty {
+    font-weight: 700;
+  }
+
+  &__price {
+    font-weight: 700;
+  }
+}

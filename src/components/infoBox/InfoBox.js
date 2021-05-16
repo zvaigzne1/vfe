@@ -4,6 +4,7 @@ import Title from './Title';
 import OptionList from "./OptionList"
 import RatingsBox from './RatingsBox';
 import PriceBox from './PriceBox';
+import MarchExpo from './MarchExpo';
 import CountdownBox from './CountdownBox';
 import TradeAssurance from './TradeAssurance';
 import Payments from './Payments';
@@ -19,6 +20,7 @@ const InfoBox = () => {
             <Title />
             <RatingsBox />
             <PriceBox />
+            <MarchExpo />
             <CountdownBox />
             <OptionList />
             <TradeAssurance />

@@ -1,0 +1,11 @@
+@import '../Base.scss';
+
+.ship-to {
+  width: 145px;
+  height: 32px;
+  margin: 4px 0 12px 0;
+
+  &__span {
+    text-decoration: underline;
+  }
+}

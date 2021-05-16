@@ -1,0 +1,27 @@
+@import '../Base.scss';
+
+.shipping-time {
+  width: 195px;
+  display: flex;
+  align-items: center;
+
+  &__p {
+    flex: 0 0 167px;
+    margin-right: 12px;
+
+    // @media only screen and (min-width: 0px) {
+    //   flex: 0 0 152px;
+    //   margin-right: 11px;
+    // }
+  }
+
+  &__span{
+    font-weight: bold;
+  }
+
+  &__img {
+    width: 16px;
+    height: 14px;
+    display: inline-block;
+  }
+}
