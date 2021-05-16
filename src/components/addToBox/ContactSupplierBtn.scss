@@ -9,9 +9,9 @@
   border-radius: 20px;
   outline: none;
 
-  // @media only screen and (min-width: 0px) {
-  //   width: 258px;
-  // }
+  @media only screen and (min-width: 1050px) {
+    width: 258px;
+  }
 
   &__box {
     display: flex;
@@ -19,9 +19,9 @@
     width: 154px;
     margin: 10px 83px 10px 47px;
     
-    // @media only screen and (min-width: 690px) {
-    //   margin: 10px 68px 10px 36px;
-    // }
+    @media only screen and (min-width: 1050px) {
+      margin: 10px 68px 10px 36px;
+    }
   }
 
   &__img {

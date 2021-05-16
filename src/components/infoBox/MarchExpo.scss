@@ -19,20 +19,20 @@
     margin: 0 45px 0 24px;
     font-size: 14px;
 
-    // @media only screen and (min-width: 0px) {
-    //   margin: 0 24px;
-    // }
+    @media only screen and (min-width: 1320px) {
+      margin: 0 24px;
+    }
   }
 
   &__on-time {
     display: none;
 
-    // @media only screen and (min-width: 0px) {
-    //   display: inline-block;
-    //   margin-right: 25px;
-    //   color: $color-primary;
-    //   font-size: 14px;
-    // }
+    @media only screen and (min-width: 1320px) {
+      display: inline-block;
+      margin-right: 25px;
+      color: $color-primary;
+      font-size: 14px;
+    }
   }
 
   &__forward {

@@ -9,9 +9,9 @@
   border-radius: 20px;
   outline: none;
   
-  // @media only screen and (min-width: 0px) {
-  //   width: 258px;
-  // }
+  @media only screen and (min-width: 1050px) {
+    width: 258px;
+  }
 
   &__p {
     font-family: Roboto;
@@ -21,8 +21,8 @@
     text-align: center;
     margin: 10px 24px;
 
-    // @media only screen and (min-width: 690px) {
-    //   width: 210px;
-    // }
+    @media only screen and (min-width: 1050px) {
+      width: 210px;
+    }
   }
 }

@@ -1,0 +1,15 @@
+Thoughts about responsive design 
+
+### Image Container
+- Image container grows untill there is space for all 3 elements in row
+- 1050px sum of ProductImage (360) + InfoBox (360) + AddToBox(small version 330px (306 + margins 2 * 12)) 
+
+- at 720 image grows to 416
+- at 1050 image shrinks to 360 
+- at 1320 image grows to 416
+
+### InfoBox
+- stays 360px till ... than 526
+
+### AddToBox
+- stays 336 till 1050 than 306

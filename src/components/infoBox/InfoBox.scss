@@ -6,8 +6,17 @@
   display: flex;
   justify-content: center;
 
-  &__container {
-    width: 360px;
-    height: 568px;
+  @media only screen and (min-width: 1050px) {
+    margin: 48px 0 12px 0;
   }
+  @media only screen and (min-width: 1320px) {
+    width: 526px;
+    padding: 0;
+    margin: 48px 24px 24px 24px;
+  }
+
+  // &__container {
+  //   width: 360px;
+  //   height: 568px;
+  // }
 }

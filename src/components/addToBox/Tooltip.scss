@@ -1,0 +1,59 @@
+@import '../Base.scss';
+
+.tooltip {
+  position: absolute;
+  padding: 15px 5px;
+  background-color: $color-gray-light;
+  color: $color-white;
+  min-width: 100px;
+  max-width: 200px;
+  opacity: 0;
+  transition-duration: 200ms;
+  transition-property: opacity, transform;
+  transform-origin: center center;
+  text-align: center;
+}
+
+.tooltip--top {
+  transform: translate(-50%, -15px) scale(0);
+}
+
+.tooltip::after {
+  border: solid transparent;
+  content: '';
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-color: rgba(255,0,0,0);
+  border-width: 6px;
+}
+
+.tooltip--top::after {
+  top: 100%;
+  left: 50%;
+  border-top-color: $color-gray-light;
+  margin-left: -6px;
+}
+
+.test-button {
+  height: 100px;
+  width: 200px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  color: var(--dark);
+  margin-bottom: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  border: 1px solid $color-gray-dark;
+  transition: color .3s ease, background-color .3s ease;
+}
+
+.test-button:hover {
+  background-color: $color-gray-dark;
+  color: $color-white;
+}

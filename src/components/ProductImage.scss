@@ -3,10 +3,41 @@
   margin: 0 0 12px 0;
   display: flex;
   justify-content: center;
+  width: 360px;
+
+  @media only screen and (min-width: 720px) {
+    width: 720px;
+  }
+  @media only screen and (min-width: 900px) {
+    width: 900px;
+  }
+  @media only screen and (min-width: 1050px) {
+    width: 360px;
+    margin: 48px 0 12px 0;
+  }
+  @media only screen and (min-width: 1320px) {
+    width: 416px;
+    height: 416px;
+  }
 
   &__img {
     width: 360px;
     height: 360px;
     display: block;
+    
+    @media only screen and (min-width: 720px) {
+      width: 416px;
+      height: 416px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      width: 360px;
+      height: 360px;
+    }
+
+    @media only screen and (min-width: 1320px) {
+      width: 416px;
+      height: 416px;
+    }
   }
 }
