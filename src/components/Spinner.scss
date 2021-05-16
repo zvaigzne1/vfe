@@ -31,7 +31,7 @@
     border-top-color: $color-primary;
     animation: SpinnerOne 1.2s linear infinite;
   }
-  
+
   &__two {
     border-bottom-color: $color-primary;
     animation: SpinnerTwo 1.2s linear infinite;
@@ -40,7 +40,6 @@
 
 @keyframes SpinnerOne {
   0% { transform: rotate(0deg); border-width: 8px }
-  // 50% { transform: rotate(180deg); border-width: 1px }
   50% { transform: rotate(180deg); border-width: 8px }
   100% { transform: rotate(360deg); border-width: 8px }
 }

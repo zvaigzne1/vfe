@@ -34,26 +34,3 @@
   border-top-color: $color-gray-light;
   margin-left: -6px;
 }
-
-.test-button {
-  height: 100px;
-  width: 200px;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 0;
-  outline: 0;
-  background-color: transparent;
-  color: var(--dark);
-  margin-bottom: 20px;
-  margin-right: 20px;
-  cursor: pointer;
-  border: 1px solid $color-gray-dark;
-  transition: color .3s ease, background-color .3s ease;
-}
-
-.test-button:hover {
-  background-color: $color-gray-dark;
-  color: $color-white;
-}

@@ -5,6 +5,7 @@ import { getProduct } from '../redux/actions/productActions';
 import ProductImage from './ProductImage';
 import InfoBox from './infoBox/InfoBox';
 import AddToBox from './addToBox/AddToBox';
+import Spinner from './Spinner';
 
 const App = () => {
   const dispatch = useDispatch();
@@ -17,7 +18,7 @@ const App = () => {
   return (
     <>
       {loading 
-        ? <h2>Loading...</h2>
+        ? <Spinner />
         : error
           ? <h2>{error}</h2>
           : <div className="main-container">
